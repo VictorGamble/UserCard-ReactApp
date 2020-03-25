@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Card, Button } from 'react-bootstrap';
 
-
-class Card extends Component{
+class UserCard extends Component{
     state = {
         firstName: "First Name",
         lastName: "Last Name",
@@ -36,17 +37,24 @@ class Card extends Component{
         const {phone} = this.state
         return (
             <div>
-                <div>
-                    <img src={pic} alt="pic"></img>
-                    <p>{firstName}</p>
-                    <p>{lastName}</p>
-                    <p>{email}</p>
-                    <p>{phone}</p>   
-                </div>
+
+<Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={pic} />
+  <Card.Body>
+    <Card.Title>User</Card.Title>
+    <Card.Text>
+      {firstName}
+             <br></br>
+         {lastName}
+         {email}
+         {phone}
+     </Card.Text>
+  </Card.Body>
+</Card>
             </div>
         )
     }
 }
 
 
-export default Card;
+export default UserCard;
