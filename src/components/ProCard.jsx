@@ -3,11 +3,11 @@ import React, { Component } from "react";
 
 
 
-const ProCard = props => {
-  const { user } = props;
-  console.log("User is", user)
+const ProCard = (props) => {
+  const {user} = props
+  console.log(user)
   return (
- null
+  null
   )
 }
 
