@@ -43,10 +43,11 @@ class UserCard extends Component{
   <Card.Body>
     <Card.Title>User</Card.Title>
     <Card.Text>
-      {firstName}
-             <br></br>
-         {lastName}
-         {email}
+      {firstName}, 
+      {lastName}
+                            <br></br>
+                            {email}
+                            <br></br>                
          {phone}
      </Card.Text>
   </Card.Body>
