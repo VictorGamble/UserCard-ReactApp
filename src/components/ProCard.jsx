@@ -1,15 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 
 
 
 
-const ProCard = (props) => {
-  const {user} = props
-  console.log(user)
+const ProCard = props => {
+  console.log("Props is =>", props)
+  const { userData } = props;
+  console.log('user Data is', userData)
   return (
-  null
-  )
-}
+    <div>
+      <img
+        src={userData.picture.thumbnail}
+        alt="#"
+      />
+      <p>
+#
+      </p>
+    </div>
+  );
+};
 
 
 
