@@ -13,7 +13,7 @@ class App extends Component{
   
   dataLoad = async () => {
     try {
-      const response = await fetch(`https://randomuser.me/api/?results=3`)
+      const response = await fetch(`https://randomuser.me/api/?results=2`)
       const data = await response.json()
       return data.results 
     } catch (error) {
@@ -39,6 +39,7 @@ class App extends Component{
   
   render() {
     const { title, userData } = this.state;
+    console.log("userData is =>", userData);
     return (
       <div className="App">
         <h1>{title}</h1>
